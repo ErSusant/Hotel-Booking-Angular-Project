@@ -1,0 +1,73 @@
+<div class="container mt-5">
+    <div class="card shadow-lg border-0">
+        <div class="card-header bg-primary text-white d-flex justify-content-between align-items-center">
+            <h5 class="mb-0">New Booking</h5>
+            <i class="fas fa-calendar-plus icon-header"></i>
+        </div>
+        <div class="card-body">
+            <form>
+                <!-- Customer Information -->
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="customerName">Customer Name</label>
+                            <input type="text" class="form-control" id="customerName" placeholder="Enter customer name" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="customerEmail">Email</label>
+                            <input type="email" class="form-control" id="customerEmail" placeholder="Enter customer email" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Room Selection -->
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="roomType">Room Type</label>
+                            <select class="form-control" id="roomType" required>
+                                <option value="" disabled selected>Select room type</option>
+                                <option>Standard Room</option>
+                                <option>Deluxe Room</option>
+                                <option>Suite</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="numberOfGuests">Number of Guests</label>
+                            <input type="number" class="form-control" id="numberOfGuests" placeholder="Enter number of guests" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Check-in and Check-out -->
+                <div class="row mb-4">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="checkInDate">Check-in Date</label>
+                            <input type="date" class="form-control" id="checkInDate" required>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="checkOutDate">Check-out Date</label>
+                            <input type="date" class="form-control" id="checkOutDate" required>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Requests -->
+                <div class="form-group mb-4">
+                    <label for="additionalRequests">Additional Requests</label>
+                    <textarea class="form-control" id="additionalRequests" rows="4" placeholder="Enter any special requests..."></textarea>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary w-100">Submit Booking</button>
+            </form>
+        </div>
+    </div>
+</div>

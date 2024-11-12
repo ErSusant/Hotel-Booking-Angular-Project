@@ -1,0 +1,28 @@
+ 
+<div class="parent">
+    <div class="ring">
+        
+        <div class="login">
+          <h2>Login</h2>
+          <div class="inputBx">
+            <input type="text" [(ngModel)]="loginData.username" placeholder="Username">
+          </div>
+          <div class="inputBx">
+            <input type="password" [(ngModel)]="loginData.password" placeholder="Password">
+          </div>
+          <div class="inputBx">
+            <input type="button" btn btn-successful value="Sign in"  (click)="checkLogin()">
+            
+          </div>
+          <div class="links">
+            <a href="#">Forget Password</a>
+            <a class="nav-link " aria-current="page" routerLink="/signup"> Sign Up</a>
+          </div>
+           <div class="container" [ngClass]="status==='success'?'blue-text':'red-text'">
+              {{msg}}
+           </div>
+        </div>
+      </div>
+</div>
+
+   

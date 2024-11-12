@@ -1,0 +1,107 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+/* Parent Container */
+.parent {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f2f5;
+}
+
+/* Ring Div */
+.ring {
+  background-color: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  width: 100%;
+}
+
+/* Login Heading */
+.login h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Input Box Styling */
+.inputBx {
+  margin-bottom: 20px;
+}
+
+.inputBx input[type="text"], 
+.inputBx input[type="password"] {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+  color: #333;
+  transition: all 0.3s ease;
+}
+
+.inputBx input[type="text"]:focus,
+.inputBx input[type="password"]:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Sign in Button */
+.inputBx input[type="button"] {
+  width: 100%;
+  padding: 12px;
+  background-color: #28a745;
+  border: none;
+  color: white;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.inputBx input[type="button"]:hover {
+  background-color: #218838;
+}
+
+/* Links Styling */
+.links {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.links a {
+  color: #007bff;
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #0056b3;
+}
+
+/* Status Message Styling */
+.container {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 16px;
+}
+
+.blue-text {
+  color: #28a745; /* Success green */
+}
+
+.red-text {
+  color: #dc3545; /* Error red */
+}

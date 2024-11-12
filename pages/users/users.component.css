@@ -1,0 +1,37 @@
+.card {
+    margin: 20px auto;  /* Centers the card with some margin */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);  /* Adds a subtle shadow */
+}
+
+.card-header {
+    font-weight: bold;  /* Bold text for the header */
+}
+
+.table {
+    width: 100%;  /* Ensures the table takes full width */
+    margin-top: 10px;
+}
+
+.table th, .table td {
+    vertical-align: middle;  /* Vertically center the content in the cells */
+    padding: 12px;  /* Adds padding for a cleaner look */
+}
+
+.btn {
+    margin: 0 5px;  /* Adds space between the Edit and Remove buttons */
+}
+
+.btn-success, .btn-danger {
+    width: 80px;  /* Ensures button widths are consistent */
+}
+
+.card-body {
+    padding: 20px;  /* Adds padding around the table for spacing */
+}
+
+@media (max-width: 768px) {
+    .col-8 {
+        flex: 0 0 100%;  /* Makes the card take full width on smaller screens */
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,79 @@
+<div class="d-flex justify-content-center">
+    <div class="col-8">
+        <div class="card">
+            <div class="card-header bg-success text-center">
+                <h6>USER LIST</h6>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                    <table class="table table-bordered text-center">
+                        <thead>
+                            <tr>
+                                <th>Id</th>
+                                <th>Full Name</th>
+                                <th>Email</th>
+                                <th>Mobile</th>
+                                <th>Username</th>
+                                <th>Role</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr *ngFor="let cust of userList">
+                                <td>{{cust.id}}</td>
+                                <td>{{cust.fullName}}</td>
+                                <td>{{cust.email}}</td>
+                                <td>{{cust.mobile}}</td>
+                                <td>{{cust.username}}</td>
+                                <td>{{cust.role}}</td>
+                                <td>
+                                    <button class="btn btn-sm btn-success" (click)="onEdit(cust.id)">Edit</button>
+                                    <button class="btn btn-sm btn-danger" (click)="onDelete(cust.id)">Remove</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!-- <button class="btn btn-sm btn-success" (click)="onSaveUser()" >Signup</button> -->
+                     <button class="btn btn-sm btn-success"><a class="nav-link " aria-current="page" routerLink="/signup"> Sign Up</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- <div class="col-4">
+        <div class="card">
+            <div class="card-header bg-success">
+                User Form
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-6">
+                        <label for="">User Name</label>
+                        <input type="text" class="form-control" [(ngModel)]="userObj.userName">
+                    </div>
+                    <div class="col-6">
+                        <label for="">Select Role</label>
+                        <select  class="form-control" [(ngModel)]="userObj.role">
+                            <option value="Staff">Staff</option>
+                            <option value="admin">admin</option>
+                            <option value="user">User</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <label for="">Password</label>
+                        <input type="text" class="form-control" [(ngModel)]="userObj.password">
+                    </div>
+                </div>
+                <div class="row pt-3">
+                    <div class="col-12 text-center">
+                        <button class="btn btn-success" (click)="getUsers()">Save User</button>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
